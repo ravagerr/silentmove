@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300%253B400%253B700&display=swap" rel="stylesheet">
+    <script src="scripts/search.js" defer></script>
+    <script src="scripts/results.js" defer></script>
+    <script src="scripts/jquery.js" defer></script>
+    <script src="scripts/jqueryAutoComplete.js" defer></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Search Results</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <div class="home-about-nav nav-ul">
+                    <li class="nav-li"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-li"><a class="nav-link" href="#">About</a></li>
+                    </div>
+                    <form id="property-search-form">
+                        <input type="text" id="location" placeholder="Search properties...">
+                        <button type="button" class="filters-buttons" id="filters-button">Filters</button>
+                      </form>
+                      <li class="nav-li"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+          <div id="filters-modal">
+            <h2 class="filters-modal-title">Filters</h2>
+            <form>
+              <label class="filters-label" for="property-type">Property Type:</label>
+              <select class="filters-select" id="property-type">
+                <option value="Any">Any</option>
+                <option value="House">House</option>
+                <option value="Flat">Flat</option>
+              </select>
+              <br>
+              <div class="filter-input-container">
+              <label class="filters-label" for="min-price">Min Price:</label>
+              <input class="filters-input" type="number" id="min-price" min="0" max="5000000">
+              <br>
+              <label class="filters-label" for="max-price">Max Price:</label>
+              <input class="filters-input" type="number" id="max-price" min="0" max="5000000">
+              <br>
+              <label class="filters-label" for="min-bedrooms">Min Bedrooms:</label>
+              <input class="filters-input" type="number" id="min-bedrooms" min="0">
+              <br>
+              <label class="filters-label" for="max-bedrooms">Max Bedrooms:</label>
+              <input class="filters-input" type="number" id="max-bedrooms" min="0">
+              <br>
+              <label class="filters-label" for="added-from">Added From:</label>
+              <input class="filters-input" placeholder="Click to select date" id="added-from">
+              <br>
+              <label class="filters-label" for="added-to">Added To:</label>
+              <input class="filters-input" placeholder="Click to select date" id="added-to">
+            </div>
+            </form>
+            <div class="filters-button-container">
+            <button type="button" class="filters-buttons" id="apply-filters-button">Apply Filters</button>
+            <button type="button" class="filters-buttons" id="clear-filters-button">Clear Filters</button>
+          </div>
+          </div>
+
+    <div class="bg-holder bg-non-home">
+
+    <section class="property-section container" id="results-container">
+    </section>
+
+    <footer class="footer-else">
+        <div class="footer-cta">
+            <h2 class="cta-title">Move in <span class="gradient-cta">silence.</span></h2>
+            <a href="#" class="work-with-us-btn">Work with us</a>
+        </div>
+
+        <div class="footer-links-container">
+            <div class="footer-title-links">
+                <div class="footer-brand-title"><h3 class="footer-brand-title">Silentmove</h3></div>
+                <div class="footer-social-links">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="instagram"></a>
+                </div>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <p class="footer-col-title">Column Heading</p>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Column Heading</p>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Column Heading</p>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                    <a href="#" class="footer-col-link">Link goes here</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
