@@ -1,6 +1,8 @@
 # Silentmove
 A clone of the popular UK property website Rightmove, built using HTML, CSS, JavaScript, and jQuery UI.
 
+View the website here: https://ravagerr.github.io/silentmove/Silentmove/index.html
+
 ## Features
 1. Search functionality with filtering options for property type, price, bedrooms, and date added
 
